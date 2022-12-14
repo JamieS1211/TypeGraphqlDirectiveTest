@@ -1,0 +1,31 @@
+{
+    "name": "type-graphql-directive-example",
+    "version": "1.0.0",
+    "description": "API",
+    "main": "dist/index.js",
+    "scripts": {
+        "tsc": "tsc",
+        "start": "node ./dist/bootstrap.js",
+        "dev-finalize-start": "npm-run-all tsc start",
+        "dev-start": "nodemon --watch src -e ts,ejs,graphql --exec npm run dev-finalize-start"
+    },
+    "author": "JamieS1211",
+    "license": "ISC",
+    "private": true,
+    "dependencies": {
+        "apollo-server-core": "3.10.3",
+        "apollo-server-express": "3.10.3",
+        "class-validator": "0.13.2",
+        "express": "4.18.2",
+        "graphql": "15.8.0",
+        "graphql-query-complexity": "0.12.0",
+        "reflect-metadata": "0.1.13",
+        "type-graphql": "1.1.1"
+    },
+    "devDependencies": {
+        "@types/express": "4.17.14",
+        "nodemon": "2.0.20",
+        "npm-run-all": "4.1.5",
+        "typescript": "4.8.4"
+    }
+}
